@@ -1,0 +1,17 @@
+.reportsGrid {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+
+
+}
+
+.report {
+    padding: 25px;
+    box-shadow: 2px 2px 2px 2px gray;
+    text-align: center;
+}
+
+hr{
+    border-bottom: 3px #006F0B;
+}

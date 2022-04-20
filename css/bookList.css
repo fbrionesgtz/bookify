@@ -1,0 +1,136 @@
+.bookListGrid {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.bookItem {
+    position: relative;
+    overflow: hidden;
+    background-color: #006F0B;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 400ms ease;
+}
+
+.bookItem img {
+    width: 100%;
+    height: 80%;
+}
+
+.bookItem:hover {
+    transform: scale(1.02);
+}
+
+.bookItem:hover .bookItemContent p {
+    animation: show-desc 250ms ease forwards;
+}
+
+.bookItemContent {
+    z-index: 0;
+    height: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.bookItemContent p {
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    padding: 0;
+    overflow: hidden;
+    height: 10rem;
+    width: 85%;
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.bookItemContent a,
+.bookItemContent button {
+    z-index: 1;
+}
+
+.bookItemContent:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #006F0B;
+    transition: all 250ms ease;
+}
+
+.bookItem:hover .bookItemContent:after {
+    height: 50%;
+}
+
+.checked {
+    color: orange;
+}
+
+.fa-star:before {
+    font-size: 2rem;
+}
+
+.rating {
+    z-index: 1;
+    height: 10%;
+    padding-top: 1rem;
+    grid-column: 1 / -1;
+}
+
+.categoryTitle {
+    color: #2a2a2a;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.categoryTitle:first-child {
+    margin-top: 0;
+}
+
+.categoryTitle:after {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 3px;
+    background-color: #2a2a2a;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+
+.emptyCollection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-weight: bold;
+    color: #2a2a2a;
+}
+
+@keyframes show-desc {
+    from {
+        z-index: 1;
+        opacity: 0;
+    }
+    70% {
+        z-index: 1;
+        opacity: 0.3;
+    }
+    90%{
+        z-index: 1;
+        opacity: 0.8;
+    }
+    to {
+        z-index: 1;
+        opacity: 1;
+    }
+}

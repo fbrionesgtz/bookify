@@ -1,0 +1,18 @@
+.fetchError,
+.requireLogin {
+    padding: 0.5rem;
+    background-color: #c90000;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.error {
+    color: red;
+}
+
+.goodbye {
+    color: blue;
+}

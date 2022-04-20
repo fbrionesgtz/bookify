@@ -1,0 +1,23 @@
+.bookDetails {
+    background: #006f0b;
+    margin: 2rem 5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.bookDetailsContent {
+    padding: 0 2rem;
+    font-size: 1.25em;
+    color: white;
+}
+
+.bookDetailsContent p:first-child {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.bookDetailsContent span {
+    font-weight: bold;
+}

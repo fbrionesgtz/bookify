@@ -1,0 +1,76 @@
+/*
+ ##################################################
+        Author: jwhittaker
+        Date: Dec 6th, 2021
+        Purpose: CIS2288 Practical Take Home
+##################################################
+ */
+
+:root {
+    --main-font-color: #fff;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    position: relative;
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: var(--main-font-color);
+}
+
+#container {
+    font-size: 12px;
+    text-align: left;
+    padding-bottom: 10%;
+}
+
+#mainArea {
+    font-size: 12px;
+    text-align: left;
+    color: black;
+    padding: 25px 50px 25px 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    color: blue;
+}
+
+/*
+Table Formatting
+ */
+.table {
+    margin: 25px auto;
+
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td {
+    background-color: white;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td {
+    background-color: lightgray;
+}
